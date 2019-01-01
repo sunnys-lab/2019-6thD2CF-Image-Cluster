@@ -5,6 +5,8 @@
 - 아래의 내용은 다음의 reference들을 참고하여 작성:
  https://www.tensorflow.org/hub/tutorials/image_retraining  
  http://androidkt.com/retrain-image-classifier-model-using-tensorflow-hub/
+- 사용언어 Python 3.6
+- Tensorflow version 1.12.0 / Tendorflow-Hub version 0.2.0 사용 요망
  
  
 
