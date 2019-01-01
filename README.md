@@ -82,7 +82,7 @@ You can visualize the graph and statistics, such as how the weights or accuracy 
 Run this command during or after retraining.
 
 ~~~
-tensorboard --logdir /tmp/retrain_logs
+tensorboard --host 127.0.0.1 --logdir ./log --port=8008
 ~~~
 
 After TensorBoard is running, navigate your web browser to localhost:6006 to view the TensorBoard.
