@@ -64,7 +64,7 @@ images. The label for each image is taken from the name of the subfolder it’s 
 The top layer receives as input a 2048-dimensional vector for each image. We train a softmax layer on top of this representation. If the softmax layer contains N labels, this corresponds to learning N + 2048*N model parameters for the biases and weights
 
 &nbsp;
->##5.TensorBoard
+>## 5.TensorBoard  
 You can visualize the graph and statistics, such as how the weights or accuracy varied during training.
 Run this command during or after retraining.
 
