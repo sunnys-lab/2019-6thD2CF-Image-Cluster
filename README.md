@@ -75,9 +75,26 @@ tensorboard --logdir /tmp/retrain_logs
 After TensorBoard is running, navigate your web browser to localhost:6006 to view the TensorBoard.
 
 &nbsp;
->## 6.Testing Model
-다음의 코드를 make_labels_pred.py 에 응용하여 prediction을 시행
+>## 6.Single Image Testing
+* 싱글 이미지에 대한 테스트는 다음과 같은 코드로 수행
+~~~
+python label_image.py \
+--graph=/tmp/output_graph.pb \
+--labels=/tmp/output_labels.txt \
+--input_layer=Placeholder \
+--output_layer=final_result \
+--image=~/test/fruits/unknown.jpg
+~~~
 
+* 이번 프로젝트에 사용한 실행 코드
+~~~
+--graph=./output/output_graph.pb --labels=/output/output_labels.txt --input_layer=Placeholder --output_layer=final_result --image=./img/dev/6660613703_10513032770_0.jpg
+~~~
+
+&nbsp;
+>## 7. make_labels_pred.py
+* 2019-01-02    
+다음의 코드를 make_labels_pred.py 에 응용하여 prediction을 시행
 ```python
 import tensorflow as tf, sys
  
@@ -110,5 +127,5 @@ with tf.Session() as sess:
          score = predictions[0][node_id]
          print('%s (score = %.5f)' % (human_string, score))
 ```
+make_labels_pred.py 코드는 dictionary 파일 및 test 이미지 전체에 대한 예측을 위한 코드 수정 중
 
-To test your own image, save it as test.jpg in your local directory and run (in the container) python classify.py test.jpg. The output will look something like this:
