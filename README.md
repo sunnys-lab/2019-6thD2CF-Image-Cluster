@@ -1,1 +1,1 @@
-# 6thD2-CampusFest-Image-Classification
+# 2019 6th D2-CampusFest Image Clustering
