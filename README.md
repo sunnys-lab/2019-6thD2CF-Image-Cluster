@@ -1,14 +1,16 @@
 ># 2019 6th D2 CampusFest Image Clustering
 
 - 6th D2 CampusFest Image Clustering 대회 참가작
-- tensorflow-hub를 이용한 이미지 유사도 분석을 통하여 유사이미지들을 clustering
-- 아래의 내용은 다음의 reference들을 참고하여 작성:  
+- tensorflow Hub를 이용한 이미지 유사도 분석 및 유사이미지 clustering
+- 아래의 내용은 다음의 reference들을 참고하여 작성:
+ https://www.tensorflow.org/hub/tutorials/image_retraining  
  http://androidkt.com/retrain-image-classifier-model-using-tensorflow-hub/
- https://opensource.com/article/17/12/tensorflow-image-classification-part-1
+ 
+ 
 
 &nbsp;
 >## 03. Creating Training Set of Images
-- 기존 이미지들을 tensorflow-hub 의 retrain.py에 사용하기 위해 class별 subfoler를 구성이 필요
+- 기존 이미지들을 tensorflow-hub 의 retrain.py에 사용하기 위해 class별 subfoler 구성이 필요
 - make_item_subfolers.py 를 실행하여 해당 작업을 자동화 
 
 &nbsp; 
@@ -18,28 +20,41 @@
 * Training은 다음과 같이 실행
 
 ~~~
-python3 retrain.py --image_dir data_dir \
---saved_model_dir saved_model_dir \
---bottleneck_dir bottleneck_dir \
---how_many_training_steps 2000 \
---output_labels output/output_labels.txt \
---output_graph output/retrain.pb
+retrain.py \
+--bottleneck_dir=./bottlenecks \
+--how_many_training_steps 100 \
+--model_dir=./inception \
+--output_graph=retrained_graph.pb \
+--output_labels=retrained_labels.txt \
+--image_dir=./item_photos \
+--summaries_dir=./log
 ~~~
+* 명령 설명    
+--bottleneck_dir = 학습할 사진을 변환해서 저장할 폴더    
+--how_many_training_steps 100  = 스탭 설정   
+--output_graph = 추론에 사용할 학습된 바이너리 파일(.pb) 저장 경로  
+--output_labels = 추론에 사용할 레이블 파일 저장 경로  
+--image_dir = 원본 이미지가 저장된 경로  
+--summaries_dir = tensorboard에 사용될 로그 파일 저장 경로  
 
-* 본 프로잭트에서는 다음과 같이 실행
+* 본 프로젝트에서는 다음과 같이 실행
 ~~~ 
-python3 retrain.py --image_dir item_photos --how_many_training_steps 100 --output_graph ./output/output_graph.pb --output_labels ./output/output_labels.txt
+python3 retrain.py --image_dir ./item_photos --how_many_training_steps 100 --output_graph=./output/retrained_graph.pb --output_labels=./output/retrained_labels.txt
 ~~~
 
 * Training이 끝나면 다음과 같은 형태로 종료
 ~~~
-INFO:tensorflow:2019-01-02 05:44:59.300157: Step 99: Validation accuracy = 100.0% (N=100)
-2019-01-02 05:45:01.396277: W tensorflow/core/graph/graph_constructor.cc:1265] Importing a graph with a lower producer version 26 into an existing graph with producer version 27. Shape inference will have run different parts of the graph with different producer versions.
+(skip)
+.
+.
+INFO:tensorflow:2019-01-02 07:33:43.877342: Step 99: Cross entropy = 0.121734
+INFO:tensorflow:2019-01-02 07:33:43.995348: Step 99: Validation accuracy = 100.0% (N=100)
+2019-01-02 07:33:46.157472: W tensorflow/core/graph/graph_constructor.cc:1265] Importing a graph with a lower producer version 26 into an existing graph with producer version 27. Shape inference will have run different parts of the graph with different producer versions.
 INFO:tensorflow:Saver not created because there are no variables in the graph to restore
 INFO:tensorflow:Restoring parameters from /tmp/_retrain_checkpoint
-INFO:tensorflow:Final test accuracy = 100.0% (N=32)
-INFO:tensorflow:Save final result to : output_graph.pb
-2019-01-02 05:45:06.444566: W tensorflow/core/graph/graph_constructor.cc:1265] Importing a graph with a lower producer version 26 into an existing graph with producer version 27. Shape inference will have run different parts of the graph with different producer versions.
+INFO:tensorflow:Final test accuracy = 100.0% (N=36)
+INFO:tensorflow:Save final result to : ./output/retrained_graph.pb
+2019-01-02 07:33:51.302766: W tensorflow/core/graph/graph_constructor.cc:1265] Importing a graph with a lower producer version 26 into an existing graph with producer version 27. Shape inference will have run different parts of the graph with different producer versions.
 INFO:tensorflow:Saver not created because there are no variables in the graph to restore
 INFO:tensorflow:Restoring parameters from /tmp/_retrain_checkpoint
 INFO:tensorflow:Froze 378 variables.
@@ -50,9 +65,7 @@ Use tf.gfile.GFile.
 ~~~
 
 As retrain.py proceeds, the training images are automatically separated into batches of training, test, and validation data sets.
-
 In the output, we're hoping for high "Train accuracy" and "Validation accuracy" and low "Cross entropy." See How to retrain Inception's final layer for new categories for a detailed explanation of these terms. Expect training to take around 30 minutes on modern hardware.
-
 Pay attention to the last line of output in your console:
 
 INFO:tensorflow:Final test accuracy = 100.0% (N=32)
@@ -78,54 +91,22 @@ After TensorBoard is running, navigate your web browser to localhost:6006 to vie
 >## 6.Single Image Testing
 * 싱글 이미지에 대한 테스트는 다음과 같은 코드로 수행
 ~~~
-python label_image.py \
---graph=/tmp/output_graph.pb \
---labels=/tmp/output_labels.txt \
---input_layer=Placeholder \
---output_layer=final_result \
---image=~/test/fruits/unknown.jpg
+python3 label_image.py --graph=./output/retrained_graph.pb --labels=./output/retrained_labels.txt --input_layer=Placeholder --output_layer=final_result --image=./img/dev/6660613703_10513032770_0.jpg
 ~~~
 
-* 이번 프로젝트에 사용한 실행 코드
+* 결과 확인  
+각 이미지 class명별 유사도 값 확인 가능
 ~~~
---graph=./output/output_graph.pb --labels=/output/output_labels.txt --input_layer=Placeholder --output_layer=final_result --image=./img/dev/6660613703_10513032770_0.jpg
+2019-01-02 07:44:08.635076: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+Class Name: 6660613703 (score = 0.88343)
+Class Name: 6676864296 (score = 0.11092)
+Class Name: 6713538177 (score = 0.00565)
 ~~~
+
 
 &nbsp;
->## 7. make_labels_pred.py
+>## 7. make_labels_pred.py (수정중)
 * 2019-01-02    
-다음의 코드를 make_labels_pred.py 에 응용하여 prediction을 시행
-```python
-import tensorflow as tf, sys
- 
-image_path = sys.argv[1]
-graph_path = './output_graph.pb'
-labels_path = './output_labels.txt'
- 
-# Read in the image_data
-image_data = tf.gfile.FastGFile(image_path, 'rb').read()
- 
-# Loads label file, strips off carriage return
-label_lines = [line.rstrip() for line
-    in tf.gfile.GFile(labels_path)]
- 
-# Unpersists graph from file
-with tf.gfile.FastGFile(graph_path, 'rb') as f:
-    graph_def = tf.GraphDef()
-    graph_def.ParseFromString(f.read())
-    _ = tf.import_graph_def(graph_def, name='')
- 
-# Feed the image_data as input to the graph and get first prediction
-with tf.Session() as sess:
-    softmax_tensor = sess.graph.get_tensor_by_name('final_result:0')
-    predictions = sess.run(softmax_tensor, 
-    {'DecodeJpeg/contents:0': image_data})
-    # Sort to show labels of first prediction in order of confidence
-    top_k = predictions[0].argsort()[-len(predictions[0]):][::-1]
-    for node_id in top_k:
-         human_string = label_lines[node_id]
-         score = predictions[0][node_id]
-         print('%s (score = %.5f)' % (human_string, score))
-```
+label_image.py 코드를 응용하여 make_labels_pred.py prediction 수행
 make_labels_pred.py 코드는 dictionary 파일 및 test 이미지 전체에 대한 예측을 위한 코드 수정 중
 
