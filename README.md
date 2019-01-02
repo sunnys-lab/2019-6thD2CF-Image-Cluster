@@ -7,7 +7,7 @@
  http://androidkt.com/retrain-image-classifier-model-using-tensorflow-hub/
 - 사용언어 Python 3.6
 - Tensorflow version 1.12.0 / Tendorflow-Hub version 0.2.0 사용 요망
- 
+- **주의사항: 네이버의 이미지 공유 정책에 따라 ./item_photos 폴더, ./img/dev 폴더는 githu에 공유하지 않았습니다.** 
  
 
 &nbsp;
@@ -87,7 +87,8 @@ Run this command during or after retraining.
 tensorboard --host 127.0.0.1 --logdir ./log --port=8008
 ~~~
 
-After TensorBoard is running, navigate your web browser to localhost:6006 to view the TensorBoard.
+After TensorBoard is running, navigate your web browser to localhost:8008 to view the TensorBoard.
+![tensorboard_sample](./tensorboard_sample.PNG)
 
 &nbsp;
 >## 6.Single Image Testing
