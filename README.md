@@ -7,7 +7,7 @@
  http://androidkt.com/retrain-image-classifier-model-using-tensorflow-hub/
 - 사용언어 Python 3.6
 - Tensorflow version 1.12.0 / Tendorflow-Hub version 0.2.0 사용 요망
-- **주의사항: 네이버의 이미지 공유 정책에 따라 ./item_photos 폴더, ./img/dev 폴더는 githu에 공유하지 않았습니다.** 
+- **주의사항: 네이버의 대회 참가용 이미지 공유 정책에 따라 ./item_photos 폴더, ./img/dev 폴더는 github에 공유하지 않았습니다.** 
  
 
 &nbsp;
