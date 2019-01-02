@@ -95,7 +95,7 @@ images. The label for each image is taken from the name of the subfolder it’s 
 The top layer receives as input a 2048-dimensional vector for each image. We train a softmax layer on top of this representation. If the softmax layer contains N labels, this corresponds to learning N + 2048*N model parameters for the biases and weights
 
 &nbsp;
->## 5.TensorBoard  
+>## 05.TensorBoard  
 You can visualize the graph and statistics, such as how the weights or accuracy varied during training.
 Run this command during or after retraining.
 
@@ -107,7 +107,7 @@ After TensorBoard is running, navigate your web browser to localhost:8008 to vie
 ![tensorboard_sample](./tensorboard_sample.PNG)
 
 &nbsp;
->## 6.Single Image Testing
+>## 06.Single Image Testing
 * 싱글 이미지에 대한 테스트는 다음과 같은 코드로 수행
 ~~~
 python3 label_image.py --graph=./output/retrained_graph.pb --labels=./output/retrained_labels.txt --input_layer=Placeholder --output_layer=final_result --image=./img/dev/6660613703_10513032770_0.jpg
@@ -124,7 +124,7 @@ Class Name: 6713538177 (score = 0.00565)
 
 
 &nbsp;
->## 7. make_labels_pred.py (수정중)
+>## 07. make_labels_pred.py (수정중)
 * 2019-01-02    
 label_image.py 코드를 응용하여 make_labels_pred.py prediction 수행
 make_labels_pred.py 코드는 dictionary 파일 및 test 이미지 전체에 대한 예측을 위한 코드 수정 중
