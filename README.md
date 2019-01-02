@@ -2,7 +2,7 @@
 
 - 6th D2 CampusFest Image Clustering 대회 참가작
 - tensorflow Hub를 이용한 이미지 유사도 분석 및 유사이미지 clustering
-- 아래의 내용은 다음의 reference들을 참고하여 작성:
+- 아래의 내용은 다음의 reference들을 참고하여 작성:  
  https://www.tensorflow.org/hub/tutorials/image_retraining  
  http://androidkt.com/retrain-image-classifier-model-using-tensorflow-hub/
 - 사용언어 Python 3.6
