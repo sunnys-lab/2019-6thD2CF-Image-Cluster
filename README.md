@@ -5,9 +5,26 @@
 - 아래의 내용은 다음의 reference들을 참고하여 작성:  
  https://www.tensorflow.org/hub/tutorials/image_retraining  
  http://androidkt.com/retrain-image-classifier-model-using-tensorflow-hub/
-- 사용언어 Python 3.6
-- Tensorflow version 1.12.0 / Tendorflow-Hub version 0.2.0 사용 요망
-- **주의사항: 네이버의 대회 참가용 이미지 공유 정책에 따라 ./item_photos 폴더, ./img/dev 폴더는 github에 공유하지 않았습니다.** 
+- **주의사항: 네이버의 대회 참가용 이미지 공유 정책에 따라 ./item_photos 폴더, ./img/dev 폴더는 github에 공유하지 않았습니다.**
+ 
+&nbsp;
+>## 01. Installation
+- Python 3.6
+- Tensorflow version 1.12.0 
+- Tendorflow-Hub version 0.2.0 
+ 
+&nbsp;
+>## 02. TensorFlow Hub Image Module for Retraining
+- Tensorflow Hub는 지난 2018년 4월에 구글이 공개한 것으로 사진이나 텍스트 데이터들을 미리 학습하여 모듈로 제공하고 있습니다. 여기에 별도로 필요한 데이터를 추가하여 빠르게 학습할 수 있다는 장점이 있습니다.
+- Tensorflow Hub는 image classification 기능을 제공하는 모듈과, 단순히 image의 feature vector를 추출하는 모듈을 포함하고 있습니다. 
+- (관련원문)  
+The module is actually a saved model.It contains pre-trained weights and graphs.It is reusable,re-trainable.It packs up the algorithm in the form of a graph and weights.
+You can find a list of all of the newly released image modules.  
+Some of them include the classification layers and some of them remove them just providing a feature vector as output.  
+We’ll choose one of the feature vectors modules Inception V1.  
+![Modules-Contain](./Modules-Contain.png)  
+- 본 프로젝트에서는 기존의 상품 이미지의 특징 벡터만 뽑아내서 학습한 학습모델을 이용하여, 임의의 이미지 유사도를 측정하는 방법입니다.
+- 유사도 비교 후 유사도가 가장 높은 기존 이미지의 class를 해당 class 이름 및 index로 라벨링 합니다.
  
 
 &nbsp;
