@@ -18,12 +18,10 @@
 - Tensorflow Hub는 지난 2018년 4월에 구글이 공개한 것으로 미리 학습된 이미지 데이터나 텍스트 데이터들을 모듈로 제공하는 플랫폼.   
 - 여기에 별도로 필요한 데이터를 추가 학습을 통하여 빠르게 학습할 수 있다는 장점이 있습니다.
 - (관련원문) TensorFlow Hub (TF-Hub) is a platform to share machine learning expertise packaged in reusable resources, notably pre-trained modules.
-- Tensorflow Hub는 image classification 기능을 제공하는 모듈과, 단순히 image의 feature vector를 추출하는 모듈을 포함하고 있습니다. 
+- Tensorflow Hub에서는 image feature matching 기능을 제공하는 모듈이 존재  
+- image의 feature vector를 추출하여 학습하여 빠르고 정확한 비교결과를 제공하는 하는 DELF 신경망 알고리즘을 기반하는 모듈
 - (관련원문)  The module is actually a saved model.It contains pre-trained weights and graphs.It is reusable,re-trainable.It packs up the algorithm in the form of a graph and weights.
-You can find a list of all of the newly released image modules.  
-Some of them include the classification layers and some of them remove them just providing a feature vector as output.  
-We’ll choose one of the feature vectors modules Inception V1.  
-![Modules-Contain](./Modules-Contain.png)  
+- In this colab, we will use a module that packages the [DELF](https://github.com/tensorflow/models/tree/master/research/delf) neural network and logic for processing images to identify keypoints and their descriptors. The weights of the neural network were trained on images of landmarks as described in [this paper](https://arxiv.org/abs/1612.06321).  
 - 본 프로젝트에서는 기존의 상품 이미지의 feature vector를 추출 class 별로 학습한 학습모델을 이용하여, 임의의 이미지에 대한 유사도를 측정하는 방법을 이용할 계획
 - 유사도 비교 후 유사도가 가장 높은 기존 이미지의 class를 해당 class 이름 및 index로 라벨링 합니다.
  
