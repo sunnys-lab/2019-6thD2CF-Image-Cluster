@@ -28,7 +28,7 @@
 Please follow [these instructions](EXTRACTION_MATCHING.md). At the end, you
 should obtain a nice figure showing local feature matches, as:
 
-![MatchedImagesExample](delf/python/examples/matched_images_example.png)
+![MatchedImagesExample](matched_images_example.png)
 
 - 본 프로젝트에서는 기존의 상품 이미지의 feature vector를 추출 class 별로 학습한 학습모델을 이용하여, 임의의 이미지에 대한 유사도를 측정하는 방법을 이용할 계획
 - 유사도 비교 후 유사도가 가장 높은 기존 이미지의 class를 해당 class 이름 및 index로 라벨링 합니다.
