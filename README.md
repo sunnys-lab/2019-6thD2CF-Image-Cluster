@@ -22,7 +22,7 @@ You can find a list of all of the newly released image modules.
 Some of them include the classification layers and some of them remove them just providing a feature vector as output.  
 We’ll choose one of the feature vectors modules Inception V1.  
 ![Modules-Contain](./Modules-Contain.png)  
-- 본 프로젝트에서는 기존의 상품 이미지의 특징 벡터만 뽑아내서 학습한 학습모델을 이용하여, 임의의 이미지 유사도를 측정하는 방법입니다.
+- 본 프로젝트에서는 기존의 상품 이미지의 feature vector를 추출 class 별로 학습한 학습모델을 이용하여, 임의의 이미지에 대한 유사도를 측정하는 방법을 이용할 계획
 - 유사도 비교 후 유사도가 가장 높은 기존 이미지의 class를 해당 class 이름 및 index로 라벨링 합니다.
  
 
