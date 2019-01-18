@@ -15,7 +15,9 @@
  
 &nbsp;
 >## 02. TensorFlow Hub Image Module for Retraining
-- Tensorflow Hub는 지난 2018년 4월에 구글이 공개한 것으로 사진이나 텍스트 데이터들을 미리 학습하여 모듈로 제공하고 있습니다. 여기에 별도로 필요한 데이터를 추가하여 빠르게 학습할 수 있다는 장점이 있습니다.
+- Tensorflow Hub는 지난 2018년 4월에 구글이 공개한 것으로 미리 학습된 이미지 데이터나 텍스트 데이터들을 모듈로 제공하는 플랫폼.   
+- 여기에 별도로 필요한 데이터를 추가 학습을 통하여 빠르게 학습할 수 있다는 장점이 있습니다.
+- (관련원문) TensorFlow Hub (TF-Hub) is a platform to share machine learning expertise packaged in reusable resources, notably pre-trained modules.
 - Tensorflow Hub는 image classification 기능을 제공하는 모듈과, 단순히 image의 feature vector를 추출하는 모듈을 포함하고 있습니다. 
 - (관련원문)  The module is actually a saved model.It contains pre-trained weights and graphs.It is reusable,re-trainable.It packs up the algorithm in the form of a graph and weights.
 You can find a list of all of the newly released image modules.  
