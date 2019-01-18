@@ -20,8 +20,6 @@
 - (관련원문) TensorFlow Hub (TF-Hub) is a platform to share machine learning expertise packaged in reusable resources, notably pre-trained modules.
 - Tensorflow Hub에서는 image feature matching 기능을 제공하는 모듈이 존재  
 - image의 feature vector를 추출하여 학습하여 빠르고 정확한 비교결과를 제공하는 하는 DELF 신경망 알고리즘을 기반하는 모듈
-- (관련원문)  The module is actually a saved model.It contains pre-trained weights and graphs.It is reusable,re-trainable.It packs up the algorithm in the form of a graph and weights.
-- In this colab, we will use a module that packages the [DELF](https://github.com/tensorflow/models/tree/master/research/delf) neural network and logic for processing images to identify keypoints and their descriptors. The weights of the neural network were trained on images of landmarks as described in [this paper](https://arxiv.org/abs/1612.06321).
 
 ## Quick start: DELF extraction and matching
 
@@ -29,6 +27,9 @@ Please follow [these instructions](EXTRACTION_MATCHING.md). At the end, you
 should obtain a nice figure showing local feature matches, as:
 
 ![MatchedImagesExample](matched_images_example.png)
+
+- (관련원문)  The module is actually a saved model.It contains pre-trained weights and graphs.It is reusable,re-trainable.It packs up the algorithm in the form of a graph and weights.
+- In this colab, we will use a module that packages the [DELF](https://github.com/tensorflow/models/tree/master/research/delf) neural network and logic for processing images to identify keypoints and their descriptors. The weights of the neural network were trained on images of landmarks as described in [this paper](https://arxiv.org/abs/1612.06321).
 
 - 본 프로젝트에서는 기존의 상품 이미지의 feature vector를 추출 class 별로 학습한 학습모델을 이용하여, 임의의 이미지에 대한 유사도를 측정하는 방법을 이용할 계획
 - 유사도 비교 후 유사도가 가장 높은 기존 이미지의 class를 해당 class 이름 및 index로 라벨링 합니다.
