@@ -4,7 +4,7 @@
 ## 00. 지정주제 개요
  - 다수의 비분류된 상품 이미지들을 대상으로 Unsupervised Clustering 작업 수행
  - 상품 이미지들의 특징을 추출하고 클러스터링 정확도를 올리는 것이 최종 목표 
- - 최종 테스트에서는 Cluster number 또한 예측 해야 함 
+ - 최종 테스트에서는 Cluster number 또한 예측 
 
 ![샘플 이미지](https://github.com/D2CampusFest/6th/blob/master/image-cluster/wiki/img-sample.png)
 
@@ -15,7 +15,7 @@
  
 &nbsp;
 ## 02. New Clustering model 
->### 02.1. Modified Flowchart
+>### 02.1 Modified Flowchart
 
 &nbsp;
 >### 02.2 Load Data 
