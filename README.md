@@ -1,7 +1,7 @@
 ># 2019 6th D2 CampusFest Image Clustering (지정주제)
 
 &nbsp;
->## 01. [지정주제 개요]
+>## [00] 지정주제 개요
 - 다수의 비분류된 상품 이미지들을 대상으로 Unsupervised Clustering 작업 수행
 - 상품 이미지들의 특징을 추출하고 클러스터링 정확도를 올리는 것이 최종 목표입니다.
 
