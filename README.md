@@ -30,5 +30,6 @@
 &nbsp;
 >### 02.5 Clustering
 
-
+&nbsp;
+>### 02.6 Visualization
 
