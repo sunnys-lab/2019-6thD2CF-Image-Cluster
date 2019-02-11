@@ -15,9 +15,7 @@
  
 &nbsp;
 ## 02. New Clustering model 
-&nbsp;
-
->### 02-1. Flowchart
+>### 02-1. Modified Flowchart
 
 &nbsp;
 >### 02-2 Load Data 
