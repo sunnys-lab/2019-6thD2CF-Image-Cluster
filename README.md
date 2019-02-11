@@ -15,19 +15,19 @@
  
 &nbsp;
 ## 02. New Clustering model 
->### 02-1. Modified Flowchart
+>### 02.1. Modified Flowchart
 
 &nbsp;
->### 02-2 Load Data 
+>### 02.2 Load Data 
 
 &nbsp;
->### 02-3 Image Preprecessing
+>### 02.3 Image Preprecessing
 
 &nbsp;
->### 02-4 Feature extraction
+>### 02.4 Feature extraction
 
 &nbsp;
->### 02.-5 Clustering
+>### 02.5 Clustering
 
 
 
