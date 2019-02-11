@@ -1,11 +1,7 @@
 ># 2019 6th D2 CampusFest Image Clustering
 
-- 6th D2 CampusFest Image Clustering 대회 참가작
-- tensorflow Hub를 이용한 이미지 유사도 분석 및 유사이미지 clustering
-- 아래의 내용은 다음의 reference들을 참고하여 작성:  
- https://www.tensorflow.org/hub/tutorials/image_retraining  
- http://androidkt.com/retrain-image-classifier-model-using-tensorflow-hub/
-- **주의사항: 네이버의 대회 참가용 이미지 공유 정책에 따라 ./item_photos 폴더, ./img/dev 폴더는 github에 공유하지 않았습니다.**
+- 지정주제: 다수의 비분류된 상품 이미지들을 대상으로 Unsupervised Clustering 정확도를 높이는 모델 수립
+- **주의사항: 네이버의 대회 참가용 이미지 공유 정책에 따라 실제 테스트 데이터 이미지는 github에 공유하지 않았습니다.**
  
 &nbsp;
 >## 01. Installation
