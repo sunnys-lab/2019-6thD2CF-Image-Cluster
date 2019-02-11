@@ -1,6 +1,4 @@
 # 2019 6th D2 CampusFest Image Clustering (지정주제)
-
-&nbsp;
 ## 00. 지정주제 개요
 ```
 - 다수의 비분류된 상품 이미지들을 대상으로 Unsupervised Clustering 작업 수행
