@@ -6,7 +6,7 @@
 
 ![샘플 이미지](https://github.com/D2CampusFest/6th/blob/master/image-cluster/wiki/img-sample.png)
 
-- **참고: 네이버의 대회 참가용 이미지 공유 정책에 따라 실제 테스트 데이터 이미지는 github에 공유하지 않았습니다.**
+- **참고: 네이버의 대회 참가용 이미지 공유 정책에 따라 실제 테스트 데이터 이미지는 본 github에 공유하지 않았습니다.**
  
 &nbsp;
 >## 01. Installation
