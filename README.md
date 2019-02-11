@@ -17,19 +17,19 @@
 >## 02. New Clustering Archtecture 
 &nbsp;
 
->### 02-1. [Flowchart] 
+### 02-1. Flowchart
 
 &nbsp;
->### 02-2 [Load Data] 
+### 02-2 Load Data 
 
 &nbsp;
->### 02-3 [Image Preprecessing] 
+### 02-3 Image Preprecessing
 
 &nbsp;
->### 02-4 [Feature extraction] 
+### 02-4 Feature extraction
 
 &nbsp;
->### 02.-5 [Clustering] 
+### 02.-5 Clustering
 
 
 
