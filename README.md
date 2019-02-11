@@ -1,5 +1,5 @@
-# 2019 6th D2 CampusFest Image Clustering (지정주제)
-=================================================
+2019 6th D2 CampusFest Image Clustering (지정주제)
+=============
 
 &nbsp;
 ## 00. 지정주제 개요
