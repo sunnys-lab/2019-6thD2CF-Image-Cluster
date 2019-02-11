@@ -11,25 +11,25 @@
 (참고: 네이버의 대회 참가용 이미지 공유 정책에 따라 실제 테스트 데이터 이미지는 본 github에 공유하지 않았습니다.)
  
 &nbsp;
->## 01. Base line code 분석
+## 01. Base line code 분석
  
 &nbsp;
->## 02. New Clustering Archtecture 
+## 02. New Clustering model 
 &nbsp;
 
- ### 02-1. Flowchart
+>### 02-1. Flowchart
 
 &nbsp;
- ### 02-2 Load Data 
+>### 02-2 Load Data 
 
 &nbsp;
- ### 02-3 Image Preprecessing
+>### 02-3 Image Preprecessing
 
 &nbsp;
- ### 02-4 Feature extraction
+>### 02-4 Feature extraction
 
 &nbsp;
- ### 02.-5 Clustering
+>### 02.-5 Clustering
 
 
 
