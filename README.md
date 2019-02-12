@@ -11,6 +11,7 @@
  
 &nbsp;
 ## 01. Base line code 분석
+![베이스 코드분석 이미지](./doc/fig1.jpg)
  
 &nbsp;
 ## 02. New Clustering model 
