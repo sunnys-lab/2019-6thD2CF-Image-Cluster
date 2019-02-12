@@ -15,19 +15,21 @@
  
 &nbsp;
 ## 02. New Clustering model 
->### 02.1 Modified Flowchart
+>### 02.1 Model Architecture Concept
 
 &nbsp;
->### 02.2 Load Data 
-
-&nbsp;
->### 02.3 Image Preprecessing
+>### 02.2 Image Preprocessing
+- True label making (make_lables_true.py)
+- Image Preprocessing (비공개)
 
 &nbsp;
 >### 02.4 Feature extraction
+- Another feature vectorising model
+- Fine-tunnning
 
 &nbsp;
 >### 02.5 Clustering
+- Another clustering model
 
 &nbsp;
 >### 02.6 Visualization
