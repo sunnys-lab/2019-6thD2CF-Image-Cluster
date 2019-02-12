@@ -20,17 +20,21 @@
 &nbsp;
 >### 02.2 Image Preprocessing
 - True label making (make_lables_true.py)
-- Image Preprocessing (비공개)
+- Image Preprocessing (결승전까지 비공개)
 
 &nbsp;
 >### 02.4 Feature extraction
-- Another feature vectorising model
-- Fine-tunnning
+- Another feature vectorising model (결승전까지 비공개)
+- Fine-tunnning (결승전까지 비공개)
 
 &nbsp;
 >### 02.5 Clustering
-- Another clustering model
+- Another clustering model (결승전까지 비공개)
 
 &nbsp;
->### 02.6 Visualization
+>### 02.6 Evaluation
+- evaluation.py
+
+&nbsp;
+>### 02.7 Visualization
 
