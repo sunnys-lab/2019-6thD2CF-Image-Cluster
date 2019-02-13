@@ -15,27 +15,31 @@
  
 &nbsp;
 ## 02. New Clustering model 
->### 02.1 Model Architecture Concept
-![Model Architecture Concept](./doc/fig_2.png)
+>### 02.0 Model Architecture Concept
+![Model Architecture Concept](./doc/fig_2-1.png)
 
 &nbsp;
->### 02.2 Image Preprocessing
-- True label making (make_lables_true.py)
-- Image Preprocessing (결승전까지 비공개)
+>### 02.1 True label making
+- make_lables_true.py
 
 &nbsp;
->### 02.4 Feature extraction
-- Another feature vectorizing model (결승전까지 비공개)
-- Fine-tunnning (결승전까지 비공개)
+>### 02.2 Feature vectorizing network fine tuning (결승전까지 비공개)
+- Using another feature vectorizing model
+- Feature_network_fine_tunig .py
+- Image augmentation + Fine-tunning a network
 
 &nbsp;
->### 02.5 Clustering
+>### 02.3 Feature extraction (결승전까지 비공개)
+ 
+
+&nbsp;
+>### 02.4 Clustering
 - Another clustering model (결승전까지 비공개)
 
 &nbsp;
->### 02.6 Evaluation
+>### 02.5 Evaluation
 - evaluation.py
 
 &nbsp;
->### 02.7 Visualization
+>### 02.6 Visualization
 
