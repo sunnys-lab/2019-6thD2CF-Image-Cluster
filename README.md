@@ -25,7 +25,7 @@
 
 &nbsp;
 >### 02.4 Feature extraction
-- Another feature vectorising model (결승전까지 비공개)
+- Another feature vectorizing model (결승전까지 비공개)
 - Fine-tunnning (결승전까지 비공개)
 
 &nbsp;
