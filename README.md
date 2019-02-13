@@ -24,13 +24,13 @@
 
 &nbsp;
 >### 02.2 Feature vectorizing network fine tuning (결승전까지 비공개)
-- Using another feature vectorizing model
 - Feature_network_fine_tunig .py
+- Using a feature vectorizing model
 - Image augmentation + Fine-tunning a network
 
 &nbsp;
 >### 02.3 Feature extraction (결승전까지 비공개)
- 
+- Feature extraction using fine tuned network model 
 
 &nbsp;
 >### 02.4 Clustering
