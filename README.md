@@ -16,6 +16,7 @@
 &nbsp;
 ## 02. New Clustering model 
 >### 02.1 Model Architecture Concept
+![Model Architecture Concept](./doc/fig_2.png)
 
 &nbsp;
 >### 02.2 Image Preprocessing
