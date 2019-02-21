@@ -88,10 +88,13 @@ SOM (Self Organizing Map, 자기 조직화 지도) 알고리즘 채용
 Ref: https://ratsgo.github.io/machine%20learning/2017/05/01/SOM/
 Image reference: http://inspirehep.net/record/1273422/plots
 ```
-
+![Model Architecture Concept](./doc/fig_5-1.png)
 
 
 &nbsp;
 >### 02.5 Evaluation
-- evaluation.py
+```
+- 최종평가
+- how to run: python3 05.evaluation.py
+```
 
