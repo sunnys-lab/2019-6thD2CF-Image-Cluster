@@ -74,6 +74,7 @@ IMG_DIR = "./img/" + DATASET           # 전처리 완료한 이미지 파일 �
 - Image feature extraction using Fine tunned feature vectorizing model (inception_v3)
 - how to run 2nd: python3 03.extract_features_v2.py
 ```
+- 실행결과: /data/train/ 폴더 밑에 features.npy와 features.tsv 파일이 생성 된다
 
 &nbsp;
 >### 03.4 Clustering
@@ -84,17 +85,33 @@ SOM (Self Organizing Map, 자기 조직화 지도) 알고리즘 채용
 - 고차원의 데이이터 공간에서 유사한 객체들이 저차원에 인접한 격자들과 연결
 - 저차원의 격자에서의 유사도는 고차원(n차원) 공간에서의 유사도를 최대한 보존하도록 학습
 - how to run: python3 04.make_labels_pred_som.py
- 
+```
+- 실행결과: /data/train/ 폴더 밑에 labels_pred.npy와 labels_pred.tsv 파일이 생성 된다
+&nbsp;
+
+![Model Architecture Concept](./doc/fig_5-1.png)
 Ref: https://ratsgo.github.io/machine%20learning/2017/05/01/SOM/
 Image reference: http://inspirehep.net/record/1273422/plots
-```
-![Model Architecture Concept](./doc/fig_5-1.png)
+
 
 
 &nbsp;
 >### 02.5 Evaluation
 ```
-- 최종평가
+- 모델 평가
 - how to run: python3 05.evaluation.py
 ```
+
+&nbsp;
+## 03. How to test using New Clustering model 
+```
+- 최종 실전 데이터를 이용하여 테스트를 할 경우 다음과 같은 순서로 진행
+01. config.py 파일에서 DATASET = "test" 로 변경
+02 /raw_image/test/ 폴더에 테스트를 위한 이미지 데이터를 넣는다
+03. 01.img_preprocess.py 파일 실행 (python3 01.img_preprocess.py)
+04. 03.extract_features_v2.py 파일 실행 (python3 03.extract_features_v2.py)
+05. 05.04.make_labels_pred_som.py 파일 실행 (python3 04.make_labels_pred_som.py)
+```
+- 실행결과: /data/test/ 폴더 밑에 labels_pred.npy와 labels_pred.tsv 파일이 생성 된다 (해당 파일이 최종 결과물)
+
 
