@@ -92,8 +92,9 @@ SOM (Self Organizing Map, 자기 조직화 지도) 알고리즘 채용
 
 - Reference: https://ratsgo.github.io/machine%20learning/2017/05/01/SOM/ 
 - Image reference: http://inspirehep.net/record/1273422/plots
+```
 ![SOM Concept](./doc/fig_5-1.png) 
-
+```
 - how to run: python3 04.make_labels_pred_som.py
 ```
 - 실행결과1: /data/train/ 폴더 밑에 labels_pred.npy와 labels_pred.tsv 파일이 생성 된다
