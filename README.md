@@ -21,6 +21,13 @@
 &nbsp;
 ## 02. New Clustering model 
 >### 02.0 Model Architecture Concept
+```
+- 특징
+01. 상품이미지의 배경을 Open-CV를 이용하여 제거하는 이미지 전처리 단계 추가
+02. Pre-trained image feature extraction model을 fine-tunning (기존에 true값을 알고 있는 상품이미지 class를 추가 training)
+03. fine-tunned model을 이용하여 image feature vector extraction
+04. Dimenstion reduction(차원 감소) 없이 clustering 가능한 SOM (Self Organizing Map) 알고리즘을 이용하여 Clustering
+```
 ![Model Architecture Concept](./doc/fig_3-2.png)
 
 &nbsp;
