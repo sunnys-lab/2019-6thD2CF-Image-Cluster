@@ -55,12 +55,18 @@ IMG_DIR = "./img/" + DATASET           # 전처리 완료한 이미지 파일 �
 ````
 ![Model Architecture Concept](./doc/fig_4-1.png)
 
->### 02.2 Feature vectorizing network fine tuning (결승전까지 비공개)
-- Feature_network_fine_tunig .py
-- Using a feature vectorizing model
+&nbsp;
+
+>### 03.2 Feature vectorizing model fine tuning
+```
+- Fine tuning a pre-trained feature vectorizing model (inception_v3)
+- 기존의 true class를 알고 있는 이미지를 이용하여 pre-train 모델에 class를 추가
 - Image augmentation + Fine-tunning a network
+- how to run: python3 02.feature_network_fine_tunig .py
+```
 
 &nbsp;
+
 >### 02.3 Feature extraction (결승전까지 비공개)
 - Feature extraction using fine tuned network model 
 
