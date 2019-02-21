@@ -70,7 +70,6 @@ IMG_DIR = "./img/" + DATASET           # 전처리 완료한 이미지 파일 �
 &nbsp;
 
 >### 02.3 Feature extraction using Fine tunned model
-- Feature extraction using fine tuned inception V3 network model 
 ```
 - Image feature extraction using Fine tunned feature vectorizing model (inception_v3)
 - how to run 2nd: python3 03.extract_features_v2.py
