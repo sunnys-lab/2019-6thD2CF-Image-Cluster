@@ -67,9 +67,9 @@ IMG_DIR = "./img/" + DATASET           # 전처리 완료한 이미지 파일 �
 - how to run 2nd: python3 02.feature_network_fine_tunig .py
 ```
 - 실행결과: root 폴더에 다음 3개의 파일이 생성된다
-'cp.top.best.hdf5' 
-'cp.fine_tuned.best.hdf5' 
-'final_weights.hdf5' 
+- 'cp.top.best.hdf5' 
+- 'cp.fine_tuned.best.hdf5' 
+- 'final_weights.hdf5' 
 
 &nbsp;
 
@@ -88,17 +88,18 @@ SOM (Self Organizing Map, 자기 조직화 지도) 알고리즘 채용
 - SOM 이란 사람의 눈으로 볼 수 있는 저차원(2차원 맵) 격자에 고차원 데이터들이 대응
 - 인공신경망과 유사한 방식의 학습을 통해 군집을 도출해 내는 기법
 - 고차원의 데이이터 공간에서 유사한 객체들이 저차원에 인접한 격자들과 연결
-- 저차원의 격자에서의 유사도는 고차원(n차원) 공간에서의 유사도를 최대한 보존하도록 학습
-- how to run: python3 04.make_labels_pred_som.py
-```
-- 실행결과: /data/train/ 폴더 밑에 labels_pred.npy와 labels_pred.tsv 파일이 생성 된다
-&nbsp;
+- 저차원의 격자에서의 유사도는 고차원(m차원) 공간에서의 유사도를 최대한 보존하도록 학습
 
-![Model Architecture Concept](./doc/fig_5-1.png) 
 - Reference: https://ratsgo.github.io/machine%20learning/2017/05/01/SOM/ 
 - Image reference: http://inspirehep.net/record/1273422/plots
+![Model Architecture Concept](./doc/fig_5-1.png) 
 
-
+- how to run: python3 04.make_labels_pred_som.py
+```
+- 실행결과1: /data/train/ 폴더 밑에 labels_pred.npy와 labels_pred.tsv 파일이 생성 된다
+- 실행결과2: 다음과 같이 Grid 형식의 Map이 visualize 된다. (진한 검정일수록 clustering이 많이된 neuron)
+&nbsp;
+![Model Architecture Concept](./doc/fig_6-1.png) 
 
 &nbsp;
 >### 02.5 Evaluation
@@ -106,6 +107,7 @@ SOM (Self Organizing Map, 자기 조직화 지도) 알고리즘 채용
 - 모델 평가
 - how to run: python3 05.evaluation.py
 ```
+- 실행결과: 예측한 cluster 갯수 및 Random Index Score가 표시된다.
 
 &nbsp;
 ## 03. How to test using New Clustering model 
