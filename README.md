@@ -62,7 +62,9 @@ IMG_DIR = "./img/" + DATASET           # 전처리 완료한 이미지 파일 �
 - Fine tuning a pre-trained feature vectorizing model (inception_v3)
 - 기존의 true class를 알고 있는 이미지를 이용하여 pre-train 모델에 class를 추가
 - Image augmentation + Fine-tunning a network
-- how to run: python3 02.feature_network_fine_tunig .py
+- Finie tunning을 위해 아래와 같이 우선 class별 subfolder를 만든 후 network를 실행한다
+- how to run 1st: python3 make_traning_image_folders.py
+- how to run 2nd: python3 02.feature_network_fine_tunig .py
 ```
 
 &nbsp;
