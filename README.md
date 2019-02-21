@@ -31,8 +31,11 @@
 ![Model Architecture Concept](./doc/fig_3-2.png)
 
 &nbsp;
->### 02.1 True label making
-- make_lables_true.py
+## 03. How to evaluate New Clustering model 
+
+&nbsp;
+>### 03.0 True label making
+- run 01.make_lables_true.py
 
 &nbsp;
 >### 02.2 Feature vectorizing network fine tuning (결승전까지 비공개)
