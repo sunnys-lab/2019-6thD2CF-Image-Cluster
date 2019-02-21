@@ -97,9 +97,11 @@ SOM (Self Organizing Map, 자기 조직화 지도) 알고리즘 채용
 ```
 - how to run: python3 04.make_labels_pred_som.py
 ```
-- 실행결과1: /data/train/ 폴더 밑에 labels_pred.npy와 labels_pred.tsv 파일이 생성 된다
-- 실행결과2: 다음과 같이 Grid 형식의 Map이 visualize 된다. (진한 검정일수록 clustering이 많이된 neuron)
+- 실행결과1: 진행율이 표시된다.
+- 실행결과2: /data/train/ 폴더 밑에 labels_pred.npy와 labels_pred.tsv 파일이 생성 된다
+- 실행결과3: 다음과 같이 Grid 형식의 Map이 visualize 된다. (진한 검정일수록 clustering이 많이된 neuron)
 &nbsp;
+![SOM progress](./doc/fig_6-2.png) 
 ![SOM visualization](./doc/fig_6-1.png) 
 
 &nbsp;
