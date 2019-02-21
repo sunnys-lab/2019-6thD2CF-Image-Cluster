@@ -49,6 +49,8 @@ IMG_DIR = "./img/" + DATASET           # 전처리 완료한 이미지 파일 �
 >### 03.1 Image pre-processing
 ```
 - 상품이미지의 배경을 Open-CV를 이용하여 제거하는 이미지 전처리 단계
+- 원분 이미지 파일이 저장되는 곳 = "./raw_img/" + DATASET   
+- 전처리 완료된 같은 파일명의 파일이 저장되는 곳 = IMG_DIR = "./img/" + DATASET  
 - how to run: python3 01.img_preprocess.py
 ````
 
