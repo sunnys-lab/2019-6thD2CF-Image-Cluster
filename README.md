@@ -116,11 +116,11 @@ SOM (Self Organizing Map, 자기 조직화 지도) 알고리즘 채용
 ## 03. How to test using New Clustering model 
 - 최종 실전 데이터를 이용하여 테스트를 할 경우 다음과 같은 순서로 진행
 ```
-01. config.py 파일에서 DATASET = "test" 로 변경
-02 /raw_image/test/ 폴더에 테스트를 위한 이미지 데이터를 넣는다
-03. 01.img_preprocess.py 파일 실행 (python3 01.img_preprocess.py)
-04. 03.extract_features_v2.py 파일 실행 (python3 03.extract_features_v2.py)
-05. 04.make_labels_pred_som.py 파일 실행 (python3 04.make_labels_pred_som.py)
+(1) config.py 파일에서 DATASET = "test" 로 변경
+(2) /raw_image/test/ 폴더에 테스트를 위한 이미지 데이터를 넣는다
+(3) 01.img_preprocess.py 파일 실행 (python3 01.img_preprocess.py)
+(4) 03.extract_features_v2.py 파일 실행 (python3 03.extract_features_v2.py)
+(5) 04.make_labels_pred_som.py 파일 실행 (python3 04.make_labels_pred_som.py)
 ```
 - 실행결과: /data/test/ 폴더 밑에 labels_pred.npy와 labels_pred.tsv 파일이 생성 (해당 파일이 최종 결과물)
 
