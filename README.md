@@ -13,6 +13,8 @@
 ## 01. Base line code 분석
 ```
 - /original_src/ 폴더의 소스
+- 아래의 이미지의 step별로 소스를 실행할 경우 시연 가능
+- config.py 에서 이미지 소스 경로변경은 필요
 ```
 ![베이스 코드분석 이미지](./doc/fig_2-2.png)
  
