@@ -66,6 +66,10 @@ IMG_DIR = "./img/" + DATASET           # 전처리 완료한 이미지 파일 �
 - how to run 1st: python3 make_traning_image_folders.py
 - how to run 2nd: python3 02.feature_network_fine_tunig .py
 ```
+- 실행결과: root 폴더에 다음 3개의 파일이 생성된다
+'cp.top.best.hdf5' 
+'cp.fine_tuned.best.hdf5' 
+'final_weights.hdf5' 
 
 &nbsp;
 
@@ -78,8 +82,9 @@ IMG_DIR = "./img/" + DATASET           # 전처리 완료한 이미지 파일 �
 
 &nbsp;
 >### 03.4 Clustering
-```
+- 기존의 K-means는 cluster class number를 예측하여 입력이 필요하며 unsupervised한 최적화 방법이 없다
 SOM (Self Organizing Map, 자기 조직화 지도) 알고리즘 채용
+```
 - SOM 이란 사람의 눈으로 볼 수 있는 저차원(2차원 맵) 격자에 고차원 데이터들이 대응
 - 인공신경망과 유사한 방식의 학습을 통해 군집을 도출해 내는 기법
 - 고차원의 데이이터 공간에서 유사한 객체들이 저차원에 인접한 격자들과 연결
