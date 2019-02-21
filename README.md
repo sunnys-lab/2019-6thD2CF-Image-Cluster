@@ -21,7 +21,7 @@
 &nbsp;
 ## 02. New Clustering model 
 >### 02.0 Model Architecture Concept
-![Model Architecture Concept](./doc/fig_2-1.png)
+![Model Architecture Concept](./doc/fig_3-2.png)
 
 &nbsp;
 >### 02.1 True label making
