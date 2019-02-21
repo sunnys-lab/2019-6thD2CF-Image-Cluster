@@ -20,7 +20,6 @@
  
 &nbsp;
 ## 02. New Clustering model 
->### 02.0 Model Architecture Concept
 ```
 - 특징
 01. 상품이미지의 배경을 Open-CV를 이용하여 제거하는 이미지 전처리 단계 추가
@@ -32,8 +31,6 @@
 
 &nbsp;
 ## 03. How to evaluate New Clustering model 
-
-&nbsp;
 >### 03.0 True label making
 - run 01.make_lables_true.py
 
