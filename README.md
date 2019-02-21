@@ -23,7 +23,7 @@
 ```
 - 특징
 01. 상품이미지의 배경을 Open-CV를 이용하여 제거하는 이미지 전처리 단계 추가
-02. Pre-trained image feature extraction model을 fine-tunning (기존에 true값을 알고 있는 상품이미지 class를 추가 training)
+02. Pre-trained feature extraction model을 fine-tunning (기존에 true값을 알고 있는 상품이미지 class를 추가 training)
 03. fine-tunned model을 이용하여 image feature vector extraction
 04. Dimenstion reduction(차원 감소) 없이 clustering 가능한 SOM (Self Organizing Map) 알고리즘을 이용하여 Clustering
 ```
@@ -32,7 +32,8 @@
 &nbsp;
 ## 03. How to evaluate New Clustering model 
 ```
-- 이미지 전처리 과정이 추가됨으로써 아래 파일들을 실행하기 전에 config.py에서 원본 이미지가 있는 폴더와 전처리 완료한 이미지가 있는 폴더를 구분 해야 함다
+- 이미지 전처리 과정이 추가됨으로써 아래 파일들을 실행하기 전에 config.py에 다음이 추가됨
+- 원본 이미지가 있는 폴더와 전처리 완료한 이미지가 있는 폴더를 구분 해야 
 # output dirs
 RAW_IMG_DIR = "./raw_img/" + DATASET   # 원본 이미지 파일 경로
 IMG_DIR = "./img/" + DATASET           # 전처리 완료한 이미지 파일 경로
