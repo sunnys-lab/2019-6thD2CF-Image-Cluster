@@ -11,7 +11,10 @@
  
 &nbsp;
 ## 01. Base line code 분석
-![베이스 코드분석 이미지](./doc/fig_1.png)
+```
+- /original_src/ 폴더의 소스
+```
+![베이스 코드분석 이미지](./doc/fig_2-2.png)
  
 &nbsp;
 ## 02. New Clustering model 
