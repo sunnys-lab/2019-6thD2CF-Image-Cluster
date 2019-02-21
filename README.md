@@ -53,7 +53,7 @@ IMG_DIR = "./img/" + DATASET           # 전처리 완료한 이미지 파일 �
 - 전처리 완료된 같은 파일명의 파일이 저장되는 곳 = IMG_DIR = "./img/" + DATASET  
 - how to run: python3 01.img_preprocess.py
 ````
-
+![Model Architecture Concept](./doc/fig_4-1.png)
 
 >### 02.2 Feature vectorizing network fine tuning (결승전까지 비공개)
 - Feature_network_fine_tunig .py
