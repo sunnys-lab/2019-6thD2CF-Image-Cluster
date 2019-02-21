@@ -33,16 +33,16 @@
 ## 03. How to evaluate New Clustering model 
 
 >### 03.0 True label making
-- run 00.make_lables_true.py
-
+```
+- python3 00.make_lables_true.py
+```
 &nbsp;
 
 >### 03.1 Image pre-processing
 ```
-- 특징
-01. 상품이미지의 배경을 Open-CV를 이용하여 제거하는 이미지 전처리 단계
-```
-- run 01.img_preprocess.py
+- 상품이미지의 배경을 Open-CV를 이용하여 제거하는 이미지 전처리 단계
+- python3 01.img_preprocess.py
+````
 
 
 >### 02.2 Feature vectorizing network fine tuning (결승전까지 비공개)
