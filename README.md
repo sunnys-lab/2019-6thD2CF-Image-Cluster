@@ -42,14 +42,14 @@ IMG_DIR = "./img/" + DATASET           # 전처리 완료한 이미지 파일 �
 
 >### 03.0 True label making
 ```
-- python3 00.make_lables_true.py
+- how to run: python3 00.make_lables_true.py
 ```
 &nbsp;
 
 >### 03.1 Image pre-processing
 ```
 - 상품이미지의 배경을 Open-CV를 이용하여 제거하는 이미지 전처리 단계
-- python3 01.img_preprocess.py
+- how to run: python3 01.img_preprocess.py
 ````
 
 
