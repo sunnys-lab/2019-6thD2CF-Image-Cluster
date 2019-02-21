@@ -69,12 +69,12 @@ IMG_DIR = "./img/" + DATASET           # 전처리 완료한 이미지 파일 �
 
 &nbsp;
 
->### 02.3 Feature extraction (결승전까지 비공개)
+>### 02.3 Feature extraction using Fine tunned model
 - Feature extraction using fine tuned network model 
 
 &nbsp;
 >### 02.4 Clustering
-- Another clustering model (결승전까지 비공개)
+- Another clustering model
 
 &nbsp;
 >### 02.5 Evaluation
