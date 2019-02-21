@@ -89,9 +89,9 @@ SOM (Self Organizing Map, 자기 조직화 지도) 알고리즘 채용
 - 실행결과: /data/train/ 폴더 밑에 labels_pred.npy와 labels_pred.tsv 파일이 생성 된다
 &nbsp;
 
-![Model Architecture Concept](./doc/fig_5-1.png)
-Ref: https://ratsgo.github.io/machine%20learning/2017/05/01/SOM/
-Image reference: http://inspirehep.net/record/1273422/plots
+![Model Architecture Concept](./doc/fig_5-1.png) 
+- Reference: https://ratsgo.github.io/machine%20learning/2017/05/01/SOM/ 
+- Image reference: http://inspirehep.net/record/1273422/plots
 
 
 
