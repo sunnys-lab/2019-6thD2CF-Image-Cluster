@@ -33,7 +33,7 @@
 ## 03. How to evaluate New Clustering model 
 ```
 - 이미지 전처리 과정이 추가됨으로써 아래 파일들을 실행하기 전에 config.py에 다음이 추가됨
-- 원본 이미지가 있는 폴더와 전처리 완료한 이미지가 있는 폴더를 구분 해야 
+- 원본 이미지가 있는 폴더와 전처리가 완료된 이미지가 들어갈 폴더를 구분 해서 config.py 에  
 # output dirs
 RAW_IMG_DIR = "./raw_img/" + DATASET   # 원본 이미지 파일 경로
 IMG_DIR = "./img/" + DATASET           # 전처리 완료한 이미지 파일 경로
