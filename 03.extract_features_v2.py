@@ -5,6 +5,7 @@ import os
 import time
 import numpy as np
 import tensorflow as tf
+import keras
 from mobilenet_v2 import MobileNet2, get_encoded_image
 from amoebanet_v1 import AmoebaNet1, get_encoded_image
 from pnasnet_v2 import PNasNet2, get_encoded_image
@@ -13,6 +14,7 @@ from inception_v3 import Inception_v3, get_encoded_image
 from inception_resnet_v2 import Inception_ResNet_v2, get_encoded_image
 from resnet_v2_152 import ResNet_v2_152, get_encoded_image
 from config import *
+from keras.models import Sequential
 import h5py
 
 
@@ -40,7 +42,9 @@ def extract_features():
 
     # build dnn model
     model = Inception_v3()
-    #model.load_weights("final_weights.hdf5", by_name=True)
+
+    with tf.Session(graph=tf.Graph()) as sess:
+        tf.saved_model.loader.load(sess, [tf.saved_model.tag_constants.SERVING], './final_model')
 
     # GPU 사용 옵션 추가 (2019.02.06)
     config = tf.ConfigProto()
