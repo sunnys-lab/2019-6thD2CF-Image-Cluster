@@ -142,7 +142,7 @@ SOM (Self Organizing Map, 자기 조직화 지도) 알고리즘 채용
 &nbsp;
 ## Histroy of readme & source
 ```
-- Fixing bug (2019-02-24) as follow file
+[2019-02-24] Fixing bug  as follow file
 02.feature_network_fine_tunig .py
 03.extract_features_v2.py
 04.make_labels_pred_som.py
