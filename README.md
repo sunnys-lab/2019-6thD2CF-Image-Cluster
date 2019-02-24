@@ -75,17 +75,15 @@ IMG_DIR = "./img/" + DATASET           # 전처리 완료한 이미지 파일 �
 
 >### 03.2 Feature vectorizing model fine tuning
 ```
-- Fine tuning a pre-trained feature vectorizing model (inception_v3)
-- 기존의 true class를 알고 있는 이미지를 이용하여 pre-train 모델에 class를 추가
+- Retraining a pre-trained feature vectorizing model (inception_v3)
+- 기존의 true class를 알고 있는 이미지를 이용하여 pre-train 모델을 re-training
 - Image augmentation + Fine-tunning a network
-- Finie tunning을 위해 아래와 같이 우선 class별 subfolder를 만든 후 network를 실행한다
+- re-training을 위해 아래와 같이 우선 class별 subfolder를 만든 후 network를 실행한다
 - how to run 1st: python3 make_traning_image_folders.py
 - how to run 2nd: python3 02.feature_network_fine_tunig .py
 ```
-- 실행결과: root 폴더에 다음 3개의 파일이 생성된다
-- 'cp.top.best.hdf5' 
-- 'cp.fine_tuned.best.hdf5' 
-- 'final_weights.hdf5' 
+- 실행결과: root 폴더에 다음과 같은 폴더 및 파일이 생성된다
+![Model Architecture Concept](./doc/fig_4-2.png)
 
 &nbsp;
 
@@ -140,4 +138,13 @@ SOM (Self Organizing Map, 자기 조직화 지도) 알고리즘 채용
 ```
 - 실행결과: /data/test/ 폴더 밑에 labels_pred.npy와 labels_pred.tsv 파일이 생성 (해당 파일이 최종 결과물)
 
+
+&nbsp;
+## Histroy of readme & source
+```
+- Fixing bug (2019-02-24) as follow file
+02.feature_network_fine_tunig .py
+03.extract_features_v2.py
+04.make_labels_pred_som.py
+```
 
