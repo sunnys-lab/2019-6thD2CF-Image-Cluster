@@ -4,9 +4,13 @@
 import pandas as pd
 import math
 import matplotlib.pyplot as plt
+import numpy as np
+import os
+
 
 from somber import Som
 from evaluation import *
+from config import *
 from numpy import (array, unravel_index, nditer, linalg, random, subtract,
                    power, exp, pi, zeros, arange, outer, meshgrid, dot,
                    logical_and, mean, std, cov, argsort, linspace, transpose)
