@@ -31,6 +31,20 @@
 ```
 ![Model Architecture Concept](./doc/fig_3-2.png)
 
+```
+- 주요 Library requirements
+python 3.6
+tensorflow 1.12.0
+tensorflow_hub 0.2.0
+numpy 1.16.1
+opencv-python 4.0.0.21
+matplotlib 2.1.2
+Keras 2.2.4
+pandas 0.24.1
+somber 2.0.1
+tqdm 4.31.1
+```
+
 &nbsp;
 ## 03. How to evaluate New Clustering model 
 ```
